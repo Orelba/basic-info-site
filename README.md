@@ -1,1 +1,3 @@
-# basic-info-site
+# Basic info site
+
+A basic info site in Node.js
