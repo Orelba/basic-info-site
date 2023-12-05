@@ -1,9 +1,6 @@
 const http = require('node:http')
 const fs = require('node:fs')
 
-const hostname = '127.0.0.1'
-const port = 8080
-
 let page404
 
 fs.readFile('./404.html', (err, data) => {
@@ -25,6 +22,6 @@ const server = http.createServer((req, res) => {
   })
 })
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`)
+server.listen(8080, () => {
+  console.log('Server running')
 })
